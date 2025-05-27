@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
-import Login from './components/login'
 import Celeste from './components/Celeste'
 import RequireAuth from './components/RequireAuth'
 import Register from './components/Register'
 import { ToastContainer } from 'react-toastify';
+import Login from './components/Login'
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
