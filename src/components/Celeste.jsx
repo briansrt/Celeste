@@ -43,7 +43,7 @@ export default function Celeste(){
 
       try {
         const response = await fetch(
-          "http://localhost:4000/celeste/chatbot",
+          "https://celeste-back.vercel.app/celeste/chatbot",
           {
             method: "POST",
             headers: {
@@ -90,7 +90,7 @@ export default function Celeste(){
   const email = async () => {
     setIsSendingEmail(true);
     try {
-      await fetch("http://localhost:4000/celeste/email", {
+      await fetch("https://celeste-back.vercel.app/celeste/email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -136,7 +136,7 @@ useEffect(() => {
 
   const fetchPreviousSession = async () => {
     try {
-      const response = await fetch("http://localhost:4000/celeste/obtenerChat", {
+      const response = await fetch("https://celeste-back.vercel.app/celeste/obtenerChat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userEmail })
