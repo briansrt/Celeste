@@ -52,7 +52,8 @@ export default function Celeste(){
             body: JSON.stringify({
               pregunta: input,
               sessionId: sessionId,
-              userEmail
+              userEmail,
+              userName: `${user.firstName}`
             }),
           }
         );
